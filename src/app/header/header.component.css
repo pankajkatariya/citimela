@@ -1,0 +1,9 @@
+.city-label
+{
+    position: absolute;
+    z-index: 999;
+    color: white;
+    padding-top: 22px;
+    margin-left: -35px;
+    font-size: 12px;
+}

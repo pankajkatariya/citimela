@@ -1,0 +1,33 @@
+<div class="modal fade" id="logInModal" tabindex="-1" role="dialog" aria-labelledby="logInModalTitle"
+     aria-hidden="true">
+    <div class="modal-dialog signupModal-content" role="document">
+        <div class="modal-content">
+            <img src="assets/images/loginbg.jpg" alt="" class="modeltopbg"/>
+            <div class="modal-content-box">
+                <h4 class="text-center p-txt pp-bottom">login</h4>
+                <form class="form-inline">
+                    <div class="alert alert-danger" role="alert" *ngIf="message">
+                        {{ message }}
+                    </div>
+                    <div class="form-group w-100">
+                        <input class="form-control b-r-0 w-100 mb-3" name="emailId" #emailId value="aaaaa@gmail.com" placeholder="Email">
+                    </div>
+                    <div class="form-group w-100">
+                        <input class="form-control b-r-0 w-100 mb-3" type="password" name="password" #password value="aaaaa" placeholder="Password">
+                    </div>
+
+                    <a class="modal-sign-up-link" (click)="login(emailId.value, password.value)">Login</a>
+                </form>
+                <p class="text-center p-txt text-uppercase"><b>or</b></p>
+                <a class="modal-sign-up-link fb-link">Sign in with Facebook</a>
+                <a class="modal-sign-up-link gplus-link">Sign in with Google+</a>
+                <!--<div class="form-check">-->
+                <!--<label class="form-check-label">-->
+                <!--<input type="checkbox" class="form-check-input">-->
+                <!--by signing in , I agree to Quikposts Terms & Conditions-->
+                <!--</label>-->
+                <!--</div>                -->
+            </div>
+        </div>
+    </div>
+</div>

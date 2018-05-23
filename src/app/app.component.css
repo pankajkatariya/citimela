@@ -1,0 +1,155 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*  Created on : Oct 12, 2017, 11:12:48 PM Author     : Power G */
+* { -webkit-tap-highlight-color: transparent; }
+
+*:focus { outline: none !important; }
+
+body { -ms-overflow-style: none !important; -webkit-touch-callout: none; -webkit-text-size-adjust: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+
+html body { background: #f5f5f5; font-size: 16px; line-height: 24px; color: #666; font-family: 'ProximaNova_Regular', sans-serif,Arial, Helvetica; font-weight: 400; }
+
+.header_bg { position: fixed; width: 100%; z-index: 111; background-color: #333; height: 50px; padding: 6px 0px 0px; }
+
+.header_bg .logo { width: 35%; float: left; min-width: 160px; }
+
+.header_bg .inner-addon { position: relative; float: left; }
+
+.header_bg .inner-addon .search-icon { position: absolute; padding: 6px 10px; pointer-events: none; top: 1px; right: 0px; background-color: #5b5b5b; }
+
+.header_bg .header_search { border-radius: 0px; background-color: #484848; color: #f2f2f2; padding-right: 40px; }
+
+.header_bg .header_search:focus { border-color: transparent; }
+
+.header_bg .top-nav-menu ul { list-style: none; padding: 0px; margin: 0px; }
+
+.header_bg .top-nav-menu .top-menu { float: left; }
+
+.header_bg .top-nav-menu .top-menu.fl-rht { float: right; }
+
+.header_bg .top-nav-menu .top-menu .qp-menu { min-width: 265px; }
+
+.header_bg .top-nav-menu .top-menu .qp-menu li { float: left; padding: 0px 10px; }
+
+.header_bg .top-nav-menu .top-menu .qp-menu li.active { border-bottom: 4px solid #f18c30; }
+
+.header_bg .top-nav-menu .top-menu .qp-menu li.active a { color: #fff; }
+
+.header_bg .top-nav-menu .top-menu .qp-menu li a { display: inline-block; color: #b6b6b6; font-size: 12px; }
+
+.header_bg .top-nav-menu .top-menu .qp-menu li a span { display: block; text-align: center; line-height: 22px; }
+
+.header_bg .top-nav-menu .top-menu .qp-menu li a:hover, .header_bg .top-nav-menu .top-menu .qp-menu li a:focus { text-decoration: none; }
+
+.header_bg .top-nav-menu .top-menu .qp-nodify li { float: left; padding: 10px 15px; }
+
+.header_bg .top-nav-menu .top-menu .qp-nodify li a { display: inline-block; }
+
+.header_bg .top-nav-menu .top-menu .qp-nodify li a.nf-link { position: relative; }
+
+.header_bg .top-nav-menu .top-menu .qp-nodify li a .nf-count { position: absolute; top: -10px; right: -10px; font-size: 11px; display: inline-block; color: #5b5b5b; background-color: #ebebeb; border-radius: 100%; height: 18px; width: 18px; line-height: 16px; text-align: center; }
+
+.header_bg .top-nav-menu .top-menu .user_name { display: inline-block; vertical-align: middle; height: 40px; padding-right: 4px; font-size: 12px; padding-top: 8px; text-transform: uppercase; color: #f2f2f2; float: left; }
+
+.header_bg .top-nav-menu .top-menu .user-pic { display: inline-block; background-color: #f2f2f2; border-radius: 100%; width: 40px; height: 40px; overflow: hidden; vertical-align: middle; text-align: center; float: left; }
+
+
+.master_body .top-nodify { background-color: #fff; -webkit-box-shadow: 0px 4px 4px #d6d6d6; box-shadow: 0px 4px 4px #d6d6d6; }
+
+.master_body .top-nodify .top-nodify-show p { margin: 0px; padding: 15px 0px; font-size: 14px; }
+
+.master_body .top-tips p { margin: 0px; padding: 15px 0px; font-size: 14px; }
+
+.master_body .top-tips p span.tips-show { font-size: 15px; color: #f18c30; font-weight: bold; }
+
+.material-menu-button { position: absolute; top: 6px; right: 20px; z-index: 10; display: block; width: 30px; height: 22px; padding: 0px; background-color: #333; }
+
+.material-menu-button span { display: block; width: 100%; height: 4px; margin-bottom: 6px; background-color: #fff; }
+
+.material-menu-button { display: none; }
+
+.left-user-show { border: 1px solid #cccccc; }
+
+.left-user-show .left-user-bg { width: 100%; height: 90px; background-size: cover; background-position: top center; background-repeat: no-repeat; }
+
+.left-user-show .left-user-pic { position: absolute; width: 80px; height: 80px; background-color: red; border-radius: 100%; left: 40%; top: 45px; z-index: 1; -webkit-transform: translateX(-20%); transform: translateX(-20%); }
+
+.left-user-show .left-user-detail { padding: 15px; padding-top: 50px; background-color: #fff; text-align: center; }
+
+.left-user-show .left-user-detail .left-user-profile-edit { color: #f18c30; font-size: 12px; text-transform: uppercase; }
+
+.left-user-show .left-user-detail .left-user-profile-edit:hover, .left-user-show .left-user-detail .left-user-profile-edit:focus { text-decoration: none; }
+
+.left-user-show .left-user-detail .left-user-view-count { color: #f18c30; }
+
+.left-user-show .left-user-detail p { margin-bottom: 5px; font-size: 14px; }
+
+.left-user-show .left-user-more { text-align: center; padding: 15px; padding-bottom: 30px; }
+
+.left-user-show .left-user-more p { margin-bottom: 10px; font-size: 12px; }
+
+.left-user-show .left-user-more h6 { color: #f18c30; padding: 0px 20px; text-transform: uppercase; font-size: 14px; }
+
+.left-user-show .left-user-more a { display: inline-block; text-transform: uppercase; border: 1px solid #f18c30; padding: 4px 10px; font-size: 12px; background-color: #fff; color: #f18c30; }
+
+.left-user-show .left-user-more a:hover { background-color: #f18c30; color: #fff; text-decoration: none; }
+
+.left-user-show .left-user-more a:focus { text-decoration: none; }
+
+.hot-topics-show .hot-topic-top { border: 1px solid #cccccc; padding: 15px 0px; padding-bottom: 0px; padding-top: 40px; background-color: #f5f5f5; margin-bottom: 20px; }
+
+.hot-topics-show .hot-topic-top .hot-topic-hd { position: absolute; top: -5px; left: 26%; background-color: #f18c30; color: #fff; padding: 3px 50px; font-size: 14px; text-transform: uppercase; }
+
+.hot-topics-show .hot-topic-top .hot-topic-list ul { list-style: none; padding: 0px; margin: 0px; }
+
+.hot-topics-show .hot-topic-top .hot-topic-list ul li { border-bottom: 1px solid #cccccc; }
+
+.hot-topics-show .hot-topic-top .hot-topic-list ul li a { display: block; background-color: #fff; padding: 5px 15px; text-decoration: none; font-size: 14px; color: #666; }
+
+.hot-topics-show .hot-topic-top .hot-topic-list ul li a.hot-active, .hot-topics-show .hot-topic-top .hot-topic-list ul li a:hover { background-color: #f1f1f1; color: #f18c30; }
+
+.hot-topics-show .hot-topic-top .hot-topic-list ul li:last-child { padding-bottom: 10px; }
+
+.event-show .event-post-top { position: relative; width: 100%; height: 65px; }
+
+.event-show .event-post-top .inner-addon { position: relative; float: left; width: 100%; border: 1px solid #ccc; padding: 5px 0px; background-color: #fff; -webkit-box-shadow: 0px 4px 4px #d6d6d6; box-shadow: 0px 4px 4px #d6d6d6; }
+
+.event-show .event-post-top .inner-addon .post-event { border: none; padding: 17px 10px; border-radius: 0px; position: relative; width: 75%; margin: 0px auto; }
+
+.event-show .event-post-top .inner-addon .event-left-icon { position: absolute; padding: 6px 10px; pointer-events: none; top: 5px; left: 0px; z-index: 11; }
+
+.event-show .event-post-top .inner-addon .event-rht-icon { position: absolute; padding: 6px 10px; pointer-events: none; top: 5px; right: 0px; z-index: 11; cursor: pointer; }
+
+.event-show .event-show-post { background-color: #fff; padding: 15px; margin-bottom: 20px; border: 1px solid #ccc; -webkit-box-shadow: 0px 4px 4px #d6d6d6; box-shadow: 0px 4px 4px #d6d6d6; }
+
+.event-show .event-show-post .event-show-user p span { display: inline-block; margin: 0px 0px 0px 4px; }
+
+.event-show .event-show-post .event-show-user p span.event-span { color: #f18c30; }
+
+.event-show .event-show-post .event-show-msg h6 { color: #f18c30; margin-bottom: 2px; }
+
+.event-show .event-show-post .event-show-msg p { margin-bottom: 0px; font-size: 14px; }
+
+.event-show .event-show-post .event-show-more { min-height: 50px; padding: 15px 0px; }
+
+.event-show .event-show-post .event-show-more .event-show-more-left { display: inline-block; float: left; margin-right: 6px; cursor: pointer; }
+
+.event-show .event-show-post .event-show-more .event-show-more-left span { font-size: 12px; }
+
+.event-show .event-show-post .event-show-more .event-show-more-rht { display: inline-block; float: right; margin-right: 4px; cursor: pointer; }
+
+.qp-gadds-box img { width: 100%; }
+
+@media only screen and (max-width: 576px) { .header_bg .logo { width: auto; min-width: 30px; } .header_bg .header_search { width: 200px; margin-left: 10px; } }
+
+@media screen and (max-width: 1199px) and (min-width: 992px) { .header_bg .top-nav-menu .top-menu.qp-rht-user { display: none; } }
+
+@media only screen and (max-width: 991px) { .header_bg .top-nav-menu .top-menu .qp-menu { min-width: 210px; } .header_bg .top-nav-menu .top-menu .qp-menu li { width: 100%; padding: 0px; } .header_bg .top-nav-menu .top-menu .qp-menu li a { padding: 15px 0px; } .header_bg .top-nav-menu .top-menu .qp-menu li a span { display: inline-block; } .header_bg .top-nav-menu .top-menu .qp-menu li.menu-service { margin-bottom: 20px; } .header_bg .top-nav-menu .top-menu .qp-nodify { width: 210px; } .header_bg .top-nav-menu .top-menu .qp-nodify li { padding: 0px; width: 33%; } .header_bg .top-nav-menu .top-menu .user_name { display: block; width: 100%; } .header_bg .top-nav-menu .top-menu .user-pic { display: block; text-align: center; } .material-menu-button { position: absolute; top: 6px; right: 20px; z-index: 10; display: block; width: 30px; height: 22px; padding: 0px; background-color: #333; }
+  .material-menu-button span { display: block; width: 100%; height: 4px; margin-bottom: 6px; background-color: #fff; }
+  .material-menu-wrapper { padding: 20px; }
+  .material-menu-view-mobile { background-color: #333; -webkit-box-shadow: 40px 0px 30px 0px rgba(0, 0, 0, 0.2); box-shadow: 40px 0px 30px 0px rgba(0, 0, 0, 0.2); }
+  .material-menu-titlebar { -webkit-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2); box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2); }
+  .material-menu-titlebar .material-menu-button { position: static; } }

@@ -1,0 +1,109 @@
+﻿<div class="event-show">
+    <div *ngFor="let event of events">
+        <div class="event-show-post">
+            <div class="event-show-user">
+                <p>
+                    <span>
+                        <img src="assets/images/otheruser.jpg" alt="" />
+                    </span>
+                    <span>Apple in space official </span>
+                    <span>
+                        <img src="assets/images/linkarrow.jpg" alt="" />
+                    </span>
+                    <span class="event-span">Event on QuiKpost</span>
+                </p>
+                <hr>
+            </div>
+            <div class="event-show-msg">
+                <!-- <p>Apple in space,Berlin,Germany</p> POST HEADING-->
+                <h6>{{event.Description}}</h6>
+                <p>{{event.CreatedOn}}</p>
+                <img *ngIf="event.Type ==1" src="{{event.Src}}" alt="" class="img-fluid" />
+                <iframe *ngIf="event.Type ==2" class="iframe-you-tube" src="//www.youtube.com/embed/3ev7GXzFTPg" frameborder="0">
+                </iframe>
+            </div>
+            <!--<div class="event-show-more">
+                <span class="event-show-more-left">
+                    <img src="assets/images/fav-wh.jpg" alt="" />
+                    <span>{{event.LikedBy}}</span>
+                </span>
+                <span class="event-show-more-rht">
+                    <span class="event-show-more-left">
+                        <img src="assets/images/comments.jpg" alt="" />
+                        <span>{{event.CommentPosts?.length}}</span>
+                </span>
+                <span class="event-show-more-left">
+                        <img src="assets/images/share.jpg" alt="" />
+                        <span></span>
+                </span>
+                </span>
+            </div>-->
+            <div *ngIf="event.CommentPosts.length > 0">
+                <!--<p class="show-all-link text-uppercase">Show All Comments</p>-->
+                <app-home-nested-events [nestedEvents]="event.CommentPosts"></app-home-nested-events>
+            </div>
+            <div class="event-show-more">
+                                    <span class="event-show-more-left">
+                                        <img src="assets/images/postuser.jpg" alt=""/>
+                                        <span class="d-inline-block">
+                                              <input type="text" placeholder="Add your comments here"
+                                                     class="event-more-comment">
+                                        </span>
+                                    </span>
+                <span class="event-show-more-rht">
+                                        <span class="event-show-more-left">
+                                            <img src="assets/images/comments.jpg" alt=""/>
+                                            <span></span>
+                                        </span>
+                                        <span class="event-show-more-left">
+                                            <img src="assets/images/share.jpg" alt=""/>
+                                            <span>2</span>
+                                        </span>
+                                    </span>
+            </div>
+        </div>
+        <!--  <div *ngFor="let CommentPost of event.CommentPosts">
+            <div class="event-show-post">
+                <div class="event-show-user">
+                    <p>
+                        <span>
+                            <img src="assets/images/otheruser.jpg" alt="" />
+                        </span>
+                        <span>Apple in space official </span>
+                        <span>
+                            <img src="images/linkarrow.jpg" alt="" />
+                        </span>
+                        <span class="event-span">Event on QuiKpost</span>
+                    </p>
+                    <hr>
+                </div>
+                <div class="event-show-msg">
+                    <h6>{{CommentPost.Description}}</h6>
+                    <p>Apple in space,Berlin,Germany</p>
+                    <p>{{CommentPost.CreatedOn}}</p>
+                    <img src="assets/images/post.jpg" alt="" class="img-fluid" />
+                </div>
+                <div class="event-show-more">
+                    <span class="event-show-more-left">
+                        <img src="assets/images/fav-wh.jpg" alt="" />
+                        <span>{{CommentPost.LikedBy}}</span>
+                    </span>
+                    <span class="event-show-more-rht">
+                        <span class="event-show-more-left">
+                            <img src="assets/images/comments.jpg" alt="" />
+                            <span>{{CommentPost.CommentPosts?.length}}</span>
+                        </span>
+                        <span class="event-show-more-left">
+                            <img src="assets/images/share.jpg" alt="" />
+                            <span></span>
+                        </span>
+                    </span>
+                </div>
+            </div>
+            <div *ngIf="CommentPost.CommentPosts.length > 0">
+                <app-home-events [events]="CommentPost.CommentPosts"></app-home-events>
+            </div>
+        </div>
+    </div>-->
+    </div>
+</div>

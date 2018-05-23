@@ -1,0 +1,22 @@
+<div *ngIf="!isEmptyObject(nestedEvents)">
+    <div class="comment-show-box">
+        <div class="comment-box-exp">
+            <div class="comment-list-box" *ngFor="let CommentPost of nestedEvents">
+                                <span class="comment-user d-inline-block">
+                                    <img src="{{CommentPost.profile_pic}}" alt=""/>
+                                    <!--assets/images/otheruser.jpg-->
+                                </span>
+                <span class="comment-detail d-inline-block">
+                                        <p class="user-name font-weight-bold">{{CommentPost.CreatedBy}}</p>
+                                        <p class="comment-txt">{{CommentPost.Description}}</p>
+                                 <span class="comment-rpy-box">
+                                    <a href="javacript:void(0);">Replay</a>
+                                </span>
+                                </span>
+                <div *ngIf="!isEmptyObject(CommentPost.CommentPosts)">
+                    <app-home-nested-events [nestedEvents]="CommentPost.CommentPosts"></app-home-nested-events>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

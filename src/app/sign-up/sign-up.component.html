@@ -1,0 +1,38 @@
+<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalTitle"
+     aria-hidden="true">
+    <div class="modal-dialog signupModal-content" role="document">
+        <div class="modal-content">
+            <img src="assets/images/loginbg.jpg" alt="" class="modeltopbg"/>
+            <div class="modal-content-box">
+                <h4 class="text-center p-txt pp-bottom">Sign up</h4>
+                <form class="form-inline">
+                    <div class="form-group w-100">
+                        <input class="form-control b-r-0 w-100 mb-3" name="username" #username value=""
+                               placeholder="Username">
+                    </div>
+                    <div class="form-group w-100">
+                        <input class="form-control b-r-0 w-100 mb-3" name="emailId" #emailId value=""
+                               placeholder="Email">
+                    </div>
+                    <div class="form-group w-100">
+                        <input class="form-control b-r-0 w-100 mb-3" type="password" name="password" #password value=""
+                               placeholder="Password">
+                    </div>
+                    <!--<div class="form-group w-100">-->
+                    <!--<input class="form-control b-r-0 w-100 mb-3" type="password" name="password" #password value="" placeholder="Re-enter password">-->
+                    <!--</div>-->
+                    <a class="modal-sign-up-link" (click)="signUp(username.value, emailId.value, password.value)">Sign up</a>
+                </form>
+                <p class="text-center p-txt text-uppercase"><b>or</b></p>
+                <a class="modal-sign-up-link fb-link">Sign up with Facebook</a>
+                <a class="modal-sign-up-link gplus-link">Sign up with Google+</a>
+                <!--<div class="form-check">-->
+                <!--<label class="form-check-label">-->
+                <!--<input type="checkbox" class="form-check-input">-->
+                <!--by signing in , I agree to Quikposts Terms & Conditions-->
+                <!--</label>-->
+                <!--</div>                -->
+            </div>
+        </div>
+    </div>
+</div>
